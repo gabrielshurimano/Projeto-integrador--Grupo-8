@@ -1,0 +1,21 @@
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid ;
+    color: chocolate;
+    background-color: rgb(172, 180, 178);
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
