@@ -2,23 +2,28 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     font-family: Poppins, sans-serif;
-    background-color: #342909;
-    height: 80px;
-    
-    
+    background-color: #342909f3;
+    padding: 20px;
 }
-.logoimagem{
-  
+.menuimagem{
     border-radius: 10px;
-
 }
+
+.logobarbershop{
+    background-color: #cfceca00;
+    color: aliceblue;
+}
+
+
 
 ul {
     display: flex;
@@ -27,15 +32,22 @@ ul {
     width: 1080px;
     height: 30px;
     border-radius: 5px;
-    list-style: none;
-    background-color: #342909;
+    background-color: #8d877500;
+    color: antiquewhite;
 }
 
 ul a:hover{
     background-color: rgba(246, 250, 36, 0.527);
     border-radius: 3px;
     text-decoration: none;
-   
+}
+
+.home, 
+.quemsomos, 
+.servicos, 
+.depoimentos, 
+.contato{
+    color: aliceblue;
 }
 
 main{
@@ -55,7 +67,6 @@ footer{
     justify-content: end;
     background-color: black;
     color: rgb(222, 222, 233);
-    
     height: 38px;
 }
 
@@ -64,18 +75,14 @@ footer{
 }
 
 .face{
-   
     border-radius: 10px;
     margin-right: 10px;
 }
 
 
 .insta{
-   
     border-radius: 10px;
     margin-right: 10px;
 }
-
- 
 
 
