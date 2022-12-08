@@ -1,5 +1,8 @@
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 nav{
     display: flex;
@@ -30,15 +33,19 @@ ul {
 
 ul a:hover{
     background-color: rgba(246, 250, 36, 0.527);
-    border-radius: 10px;
+    border-radius: 3px;
     text-decoration: none;
    
 }
 
 main{
-   
-    height: 250px;
-    background-color: burlywood;
+    display: flex;
+    
+}
+
+.homeimgdefundo{
+    height: 500px;
+    width: 1368px;
     
 }
 
@@ -48,8 +55,8 @@ footer{
     justify-content: end;
     background-color: black;
     color: rgb(222, 222, 233);
-    margin-top: 1px;
-    height: 35px;
+    
+    height: 38px;
 }
 
 .direitosreserva{
