@@ -1,45 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
-</head>
-<body>
-    <header> <!--Logo e barra de navegação-->
-        <!--Logo-->
-        <a href="home.html">
-        <img src="/Projeto-integrador--Grupo-8/imagens/logo_teste.jpeg" alt="Logobarbearia">  
-        </a>
-        <!--Barra de navegação-->
-        <nav>
-          <ul>
-            <a href="home.html"><il>Home&nbsp;/&nbsp;</il></a>
-            <a href="quemsomos.html"><il>Quem Somos&nbsp;/&nbsp;</il></a>
-            <a href="servicos.html"><il>Serviços&nbsp;/&nbsp;</il></a>
-            <a href="depoimentos.html"><il>Depoimentos&nbsp;/&nbsp;</il></a>
-            <a href=""><il>Contato&nbsp;</il></a>
-          </ul>
-        </nav>
-      </header>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- chamando o css -->
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="/quemsomos.css" />
+
+    <!-- adicionando fontes do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo da barra de navegação -->
+        <img class="iconeimg" src="imagens/logo_com_fundo.jpg" alt="iconeimg" />
+        <span class="logobarbershop">BARBERSHOP</span>
+        <ul>
+          <li><a href="home.html" class="home">Home</a></li>
+          <li><a href="quemsomos.html" class="quemsomos">Quem Somos</a></li>
+          <li><a href="servicos.html" class="servicos">Serviços</a></li>
+          <li>
+            <a href="depoimentos.html " class="depoimentos">Depoimentos</a>
+          </li>
+          <li><a href="contato.html" class="contato">Contato</a></li>
+          <li>
+            <a href="agendamentonline " class="online">Agendamento Online</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <h1>Quem Somos</h1>
-        <p>Inspirada nas antigas barbearias de Nova York...</p>
-
+      <h1>Quem Somos</h1>
+      <p>Inspirada nas antigas barbearias de Nova York...</p>
     </main>
 
-
     <footer>
-        <h2>Nossos Parceiros</h2>
-        <img src="" alt="parceiro1">
-        <img src="" alt="parceiro2">
-        <img src="" alt="parceiro3"><br><br>
-
-        <span>Copyright © 2022 - Todos Direitos Reservados</span>
-        <img src="" alt="facebook">
-        <img src="" alt="instagram">
+      <span class="direitosreserva"
+        >Copyright © 2022 - Barbershop Social Club. Todos Direitos Reservados.
+        Desenvolvido por protechweb.</span
+      >
+      <img class="face" src="imagens/face.png" height="30px" alt="facebook" />
+      <img class="zap" src="imagens/zap.png" height="30px" alt="whatsapp" />
+      <img
+        class="insta"
+        src="imagens/insta.png"
+        height="30px"
+        alt="instagram"
+      />
     </footer>
-</body>
+  </body>
 </html>

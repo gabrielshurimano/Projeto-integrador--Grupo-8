@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+  background-color: #231806;
+  padding: 15px;
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+.iconeimg {
+  border-radius: 10px;
+  height: 50px;
+  width: 90px;
+}
+
+.logobarbershop {
+  background-color: #cfceca00;
+  color: #6d6a75;
+  margin: 15px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1080px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #8d877500;
+  color: antiquewhite;
+}
+
+ul a:hover {
+  background-color: rgba(246, 250, 36, 0.527);
+  border-radius: 3px;
+}
+
+.home,
+.quemsomos,
+.servicos,
+.depoimentos,
+.contato,
+.online {
+  color: aliceblue;
+}
+
+.online {
+  background-color: #6d6a75;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* main {
+  background-color: #342909;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imgdefundo {
+  width: 1347px;
+  height: 600px;
+  margin: 0px;
+  bottom: 0px;
+  top: 0px;
+}
+
+.imgservi1 {
+  position: absolute;
+  height: 160px;
+  top: 250px;
+  left: 50px;
+}
+
+.imgservi2 {
+  position: absolute;
+  height: 200px;
+  top: 450px;
+  left: 250px;
+}
+
+.imgservi3 {
+  position: absolute;
+  height: 200px;
+  top: 140px;
+  left: 450px;
+}
+
+.imgservi4 {
+  position: absolute;
+  top: 400px;
+  left: 650px;
+  width: 180px;
+}
+
+.imgservi5 {
+  position: absolute;
+  top: 500px;
+  left: 900px;
+  width: 200px;
+} */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(222, 222, 233);
+  height: 38px;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.direitosreserva {
+  padding: 10px;
+}
+
+.face {
+  margin-right: 10px;
+}
+
+.zap {
+  display: flex;
+  margin-right: 10px;
+}
+
+.insta {
+  border-radius: 10px;
+  margin-right: 10px;
+}
