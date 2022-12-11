@@ -5,51 +5,84 @@
   text-decoration: none;
 }
 
-main {
-  background-color: #342909;
+section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: first baseline;
+  align-items: center;
+  padding: 10px;
+  height: 500px;
+  background-color: #342909;
+  padding: 10px;
 }
 
-.imgdefundo {
-  width: 1347px;
-  height: 600px;
+/*.imgdefundo {
+  position: absolute;
+  width: 500px;
+  height: 300px;
   margin: 0px;
   bottom: 0px;
-  top: 0px;
-}
+  top: 200px;
+}*/
 
 .imgservi1 {
-  position: absolute;
+  
   height: 160px;
-  top: 250px;
+  width: 180px;
+  top: 270px;
   left: 50px;
+  border-radius: 20px;
 }
 
 .imgservi2 {
-  position: absolute;
-  height: 200px;
-  top: 450px;
-  left: 250px;
+  height:160px;
+  width: 180px;;
+  top: 50px;
+  left: 210px;
+  border-radius: 20px;
 }
 
 .imgservi3 {
-  position: absolute;
-  height: 200px;
-  top: 140px;
-  left: 450px;
+  
+  height: 160px;
+  top: 250px;
+  left: 410px;
+  border-radius: 20px;
 }
 
 .imgservi4 {
-  position: absolute;
+
   top: 400px;
-  left: 650px;
+  left: 550px;
   width: 180px;
+  height: 160px;
+  border-radius: 20px;
 }
 
 .imgservi5 {
-  position: absolute;
-  top: 500px;
-  left: 900px;
-  width: 200px;
+  
+    top: 250px;
+    left: 700px;
+    width: 195px;
+    height: 160px;
+    border-radius: 20px;
 }
+
+/*div{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: aliceblue;
+  
+}
+
+.propaganda {
+  position: absolute;
+  background-color: rgba(116, 226, 43, 0.651);
+  height: 280px;
+  width: 300px;
+  left: 980px;
+  top: 335px;
+  border-radius: 20px;
+  padding: 10px;
+}*/
+

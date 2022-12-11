@@ -7,13 +7,14 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  /*justify-content:space-evenly ;*/
   align-items: center;
   font-family: Poppins, sans-serif;
-  background-color: #231806;
+  background-color: #231806f5;
   padding: 15px;
   font-family: 'Lobster', cursive;
   font-size: 20px;
+  gap: 15px;
 }
 .iconeimg {
   border-radius: 10px;
@@ -22,25 +23,34 @@ nav {
 }
 
 .logobarbershop {
-  background-color: #cfceca00;
-  color: #6d6a75;
-  margin: 15px;
+  background-color: #342909;
+  color: #bfbdc1;
+  padding: 8px;
+  animation: shakeY infinite, /*fadeOut infinite,*/ heartBeat infinite;
+  animation-duration: 5s;
+  border-radius: 15px;
+  
 }
 
 ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width: 1080px;
+  width: 1200px;
   height: 30px;
   border-radius: 5px;
   background-color: #8d877500;
-  color: antiquewhite;
+  padding: 10px;
+  margin-left: 0px;
+  
 }
 
+
+
 ul a:hover {
-  background-color: rgba(246, 250, 36, 0.527);
+  background-color:#bfbdc1;
   border-radius: 3px;
+  padding: 2px;
 }
 
 .home,
@@ -49,14 +59,14 @@ ul a:hover {
 .depoimentos,
 .contato,
 .online {
-  color: aliceblue;
+  color: #6d6a75;
 }
 
-.online {
+/*.online {
   background-color: #6d6a75;
-  padding: 5px;
+  padding: 3px;
   border-radius: 3px;
-}
+}*/
 
 /* main {
   background-color: #342909;
