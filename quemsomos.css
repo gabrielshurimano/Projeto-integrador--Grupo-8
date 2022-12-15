@@ -4,3 +4,24 @@
   list-style: none;
   text-decoration: none;
 }
+
+.cards{
+  display: flex;
+}
+
+h1{
+  font-family:'Lobster';
+  color:#DEDEDE;
+
+}
+
+p{
+  font-family:'Open Sans'; 
+  font-size: 20px;
+  color:#FFFFFF;
+}
+
+main{
+  background-color: #6D6A75;
+
+}
