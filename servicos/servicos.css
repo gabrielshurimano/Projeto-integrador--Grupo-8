@@ -4,3 +4,35 @@
   list-style: none;
   text-decoration: none;
 }
+
+.container {
+  background-color: aqua;
+  border: 1px solid red;
+  height: 250px;
+  padding: 20px 10px 20px 45px;
+  margin: 0%;
+  
+  display : grid;
+  grid-template-columns: 25px 25px 25px 25px;
+  grid-template-rows: 50px 50px;
+  column-gap: 300px;
+  /* row-gap: ; */
+
+  paramos por aqui, falta ajustar para a descrição dos serviços ficar bem centralizado
+}
+
+.container img{
+  background-color: brown;
+  padding: 20px;
+  margin: 0px;
+  border: 1px solid rgb(248, 224, 7);
+  width: 200px;
+  height: 200px;
+}
+
+.container p{
+  background-color: black;
+}
+/* #img_1 {
+  margin-left: 20px;
+} */
