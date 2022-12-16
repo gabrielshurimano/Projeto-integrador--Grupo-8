@@ -2,87 +2,66 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
+  outline: none;
+  list-style: none;
+  text-decoration:none;
+  /* font-family: 'open Sans',sans-serif ;*/
 }
 
-section {
-  display: flex;
-  justify-content: first baseline;
-  align-items: center;
-  padding: 10px;
+.root{
+--cinza-x-11-cinza:#bfbdc1;
+--lavanda-velha: #6d6a75;
+--heliotrópio-cinza:#a299ad;
+--oliva-drab:#342909;
+--chocolate-preto:#231806;
+--black:#0000;
+}
+
+
+section{
+  background-color: #161515de ;
   height: 500px;
-  background-color: #342909;
-  padding: 10px;
+  /*background-size: cover;*/
 }
 
-/*.imgdefundo {
-  position: absolute;
-  width: 500px;
-  height: 300px;
-  margin: 0px;
-  bottom: 0px;
-  top: 200px;
-}*/
-
-.imgservi1 {
-  
-  height: 160px;
-  width: 180px;
-  top: 270px;
-  left: 50px;
-  border-radius: 20px;
-}
-
-.imgservi2 {
-  height:160px;
-  width: 180px;;
-  top: 50px;
-  left: 210px;
-  border-radius: 20px;
-}
-
-.imgservi3 {
-  
-  height: 160px;
-  top: 250px;
-  left: 410px;
-  border-radius: 20px;
-}
-
-.imgservi4 {
-
-  top: 400px;
-  left: 550px;
-  width: 180px;
-  height: 160px;
-  border-radius: 20px;
-}
-
-.imgservi5 {
-  
-    top: 250px;
-    left: 700px;
-    width: 195px;
-    height: 160px;
-    border-radius: 20px;
-}
-
-/*div{
+.img1defundo{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  color: aliceblue;
+  height: 500px;
+  width:1366px;
+}
+
+
+.propaganda{
+  position: absolute;
+  background-color: transparent;
+  height: 200px;
+  width: 400px;
+  left: 700px;
+  right:0px;
+  top: 190px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #ffff; 
+  backdrop-filter: blur(4px);
+  /*overflow: hidden;*/
   
 }
 
-.propaganda {
-  position: absolute;
-  background-color: rgba(116, 226, 43, 0.651);
-  height: 280px;
-  width: 300px;
-  left: 980px;
-  top: 335px;
-  border-radius: 20px;
-  padding: 10px;
-}*/
 
+.paragrafo{
+  color: rgb(224, 224, 224);
+  position:relative;
+  top: 250px;
+  left: 85px;
+  
+}
+
+
+
+
+
+
+
+
+
+/*================================TESTES====================================
