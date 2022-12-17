@@ -3,11 +3,25 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  
 }
 
+h1{
+  background-color: #a299ad;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #231806;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 26px;
+}
+
+/* **************************************************** Editandos os containeters **************************************************** */
 .container {
-  background-color: aqua;
-  border: 1px solid red;
+  /* imagem de fundo */
+  background-image:url(/imagens/fundo_servicos.jpg);
+  /* background-color: #342909; */
   height: 250px;
   padding: 20px 10px 20px 45px;
   margin: 0%;
@@ -22,17 +36,32 @@
 }
 
 .container img {
-  background-color: red;
+  background-color: 
+  #231806
+  ;
   padding: 20px;
   margin: 0px;
-  border: 1px solid rgb(248, 224, 7);
+  /* border: 1px solid rgb(248, 224, 7); */
   width: 200px;
   height: 200px;
 }
 
 .container p {
-  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* borda */
+  /* border: 2px solid cornflowerblue; */
+  padding-left: 40px;
+  padding-right: 40px;
+ 
+  /* larguda da caixa com o texto */
+  width: 155px;
+  height: 25px;
+  /* fonte usada no nome dos serviços */
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
-/* #img_1 {
-  margin-left: 20px;
-} */
+
+
+footer{
+  margin-top: 100px;
+}
