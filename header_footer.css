@@ -2,39 +2,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none;
+  outline: none;
+  list-style: none;
+  text-decoration:none;
 }
 
 nav {
   display: flex;
   /*justify-content:space-evenly ;*/
   align-items: center;
-  font-family: Poppins, sans-serif;
   background-color: #231806;
-  padding: 15px;
+  padding: 12px;
   font-family: 'Lobster', cursive;
   font-size: 20px;
   gap: 15px;
 }
 .iconeimg {
-  border-radius: 10px;
-  height: 50px;
-  width: 90px;
+  height: 72px;
+  width: 72px;
+  padding: 1px;
 }
 
 .logobarbershop {
-  background-color: #342909;
+  background-color: #342909c4;
   color: #bfbdc1;
-  padding: 8px;
-  animation: shakeY infinite, /*fadeOut infinite,*/ heartBeat infinite;
-  animation-duration: 6s;
-  border-radius: 15px;
+  padding:  10px 6px;
+  animation:rubberBand infinite;
+  border-radius: 3px;
+  
   
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 1200px;
   height: 30px;
@@ -45,7 +46,7 @@ ul {
 li :hover{
     background-color:#a299ad7a;
     border-radius: 5px;
-    transition: 0.7s;
+    transition: 0.8s;
 }
 
 .home,
@@ -53,11 +54,17 @@ li :hover{
 .servicos,
 .depoimentos,
 .contato,
-.online {
+.agendaonline{
   color: #bfbdc1;
   padding: 3px ;
 }
 
+.agendaonline{
+  background-color: #6d6a7594;
+  padding: 8px;
+  border-radius: 3px;
+
+}
 /*.online {
   background-color: #6d6a75;
   padding: 3px;

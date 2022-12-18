@@ -17,51 +17,84 @@
 --black:#0000;
 }
 
-
 section{
-  background-color: #161515de ;
+  background-color: #16151596 ;
   height: 500px;
-  /*background-size: cover;*/
+  width:1340px;
 }
 
 .img1defundo{
-  display: flex;
   height: 500px;
-  width:1366px;
+  width: 800px;
+  left: 100px;
 }
 
-
-.propaganda{
+.img2defundo{
   position: absolute;
-  background-color: transparent;
-  height: 200px;
-  width: 400px;
-  left: 700px;
-  right:0px;
-  top: 190px;
-  border-radius: 20px;
+  height: 500px;
+  width: 549px;
+
+}
+
+.confra{
+  height: 501px;
+  width:1349px;
+
+}
+
+.telapreta{
+  position: absolute;
+  background-color: #000000 ;
+  height: 500px;
+  width: 755px;
+  top: 100px;
+  background-size: cover;
+  left: 590px;
+  backdrop-filter: blur(3px) ;
+
+  
+}
+
+.boxcriatexto{
+  position: absolute;
+  background-color: rgba(240, 248, 255, 0);
+  color: beige;
+  height: 35px;
+  width: 550px;
+  top:210px;
+  left: 650px;
   padding: 10px;
-  border: 2px solid #ffff; 
-  backdrop-filter: blur(4px);
-  /*overflow: hidden;*/
-  
+  font-size: 25px;
+  font-family: 'Lobster', cursive;
+  animation: slideInDown infinite;
+  animation-duration: 7s; 
 }
 
-
-.paragrafo{
-  color: rgb(224, 224, 224);
-  position:relative;
-  top: 250px;
-  left: 85px;
-  
+.imgpropaganda{
+  position: absolute;
+  top: 110px;
+  left: 200px;
+  height: 200px;
+  padding: 8px;
+  animation:zoomIn infinite;
+  animation-duration: 7s; 
 }
 
-
-
-
-
-
-
-
+.paragrafotexto{
+  font-family: 'Lobster', cursive;
+  background-color: rgba(240, 248, 255, 0);
+  color: aliceblue;
+  position: absolute;
+  padding: 10px ;
+  height: 35px;
+  width:400px;
+  top: 360px;
+  left: 755px;
+  font-size: 25px;
+  animation:lightSpeedInLeft infinite;
+  animation-duration: 7s;
+}
 
 /*================================TESTES====================================
+background-position: center;
+backdrop-filter: blur() ;
