@@ -1,17 +1,33 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 2px;
   list-style: none;
   text-decoration: none;
 }
 
 .cards{
   display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 1400px;
+  height: 400px;
+  background-color: #342909;  
+  border: groove 8px;
 }
 
 h1{
   font-family:'Lobster';
   color:#DEDEDE;
+  margin-bottom: 5px;
+
+}
+
+h2{
+  color: aquamarine;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color:#DEDEDE;
+  margin-bottom: 5px;
+  padding: 5px;
 
 }
 
@@ -20,6 +36,8 @@ p{
   font-size: 20px;
   color:#FFFFFF;
 }
+
+
 
 main{
   background-color: #6D6A75;
