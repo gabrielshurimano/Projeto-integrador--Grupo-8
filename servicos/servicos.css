@@ -24,7 +24,7 @@ h1{
 /* **************************************************** Editandos os containeters **************************************************** */
 .container {
   /* imagem de fundo */
-  background-image:url(/imagens/fundo_servicos.jpg);
+  background-image:url(imagens/fundo_servicos.jpg);
   /* background-color: #342909; */
   height: 250px;
   padding: 20px 10px 20px 45px;
