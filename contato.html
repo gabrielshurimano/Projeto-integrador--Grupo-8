@@ -1,61 +1,119 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Contato</title>
-   
-</head>
-<body>
-<header>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-</header>
-<main>
-<form>
-<label for="nomesobrenome"> Nome e Sobrenome</label>
-<input type="text" id="nomesobrenome" class="input-padrao">
-
-<label for="email"> Email </label>
-<input type="text" id="email" class="input-padrao">
-
-<label for="telefone"> Telefone </label>
-<input type="text" id="telefone" class="input-padrao">
-
-
-<label for="mensagem">Mensagem</label>
-<textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
-
-    <div>	
-    <p> Como Prefere nosso contato? </p>
-    <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- chamando o css -->
+        <link rel="stylesheet" href="header_footer.css" />
+        <link rel="stylesheet" href="/contato.css" />
     
+        <!-- adicionando fontes do projeto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>contato</title>
+    </head>
+    <body>
+        <header>
+        <nav class id="#">
+            <!-- logo da barra de navegação -->
+            <img class="iconeimg" src="imagens/logo1-1-copy_1.png" alt="iconeimg" />
+            <!--<span class="logobarbershop">BARBERSHOP</span>-->
+            <ul>
+            <li>
+                <a href="home.html" class="home">Home</a>
+            </li>
+            <li>
+                <a href="quemsomos.html" class="quemsomos">Quem Somos</a>
+            </li>
+            <li>
+                <a href="servicos.html" class="servicos">Serviços</a>
+            </li>
+
+            <span class="logobarbershop">BARBERSHOP</span>
+
+            <li>
+                <a href="depoimentos.html " class="depoimentos">Depoimentos</a>
+            </li>
+            <li>
+                <a href="contato.html" class="contato">Contato</a></li>
+
+            <li>
+                <a href="emaildaloja" class="agendaonline">
+                    AGENDAMENTO ONLINE
+                </a>
+            </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+        <label for="nomesobrenome"> Nome e Sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao">
+
+        <label for="email"> Email </label>
+        <input type="text" id="email" class="input-padrao">
+
+        <label for="telefone"> Telefone </label>
+        <input type="text" id="telefone" class="input-padrao">
 
 
-    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-    
+        <label for="mensagem">Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
 
-    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
-    
-<div>
-    <label class="checkbox"> <input type="checkbox" > Gostaria de receber nossas novidades por email?</label>
-
-<input type="submit" value="Enviar formulario">
-</form>
+        <div class="box">	
+            <p> Como Prefere nosso contato? </p>
+            <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+            
 
 
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+            
 
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+        </div>
+        <div class="novidades">
+            <label class="checkbox"> <input type="checkbox" > Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulario">
+        </div>
+        </form>
 </main>
 
     <footer>
-          
-        <span>Copyright © 2022 - Todos Direitos Reservados</span>
-        <img src="" alt="facebook" />
-        <img src="" alt="instagram" />
-      </footer>
-
-
-
-</body>
+        <span class="direitosreserva"
+        >Copyright © 2022 - Barbershop Social Club. Todos Direitos Reservados.
+        Desenvolvido por protechweb.</span
+        >
+        <img class="face" 
+        src="imagens/face.png" 
+        height="30px" alt="facebook" 
+        />
+        <img class="zap" 
+        src="imagens/zap.png" 
+        height="30px" alt="whatsapp" 
+        />
+        <img class="insta"
+        src="imagens/insta.png"
+        height="30px"
+        alt="instagram"
+        />
+    </footer>
+    </body>
 </html>

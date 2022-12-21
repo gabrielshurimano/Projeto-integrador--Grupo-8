@@ -37,7 +37,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   height: 30px;
   background-color: #8d877500;
   padding: 5px;
