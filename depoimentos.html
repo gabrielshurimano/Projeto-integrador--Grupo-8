@@ -1,66 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- chamando o css -->
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="depoimentos/depoimentos.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depoimentos</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- adicionando fontes do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-</head>
 
-<body>
-    <header> <!--Logo e barra de navegação-->
-        <!--Logo-->
-        <a href="home.html">
-        <img src="/Projeto-integrador--Grupo-8/imagens/logo_teste.jpeg" alt="Logobarbearia">  
-        </a>
-        <!--Barra de navegação-->
-        <nav>
-          <ul>
-            <a href="home.html"><il>Home&nbsp;/&nbsp;</il></a>
-            <a href="quemsomos.html"><il>Quem Somos&nbsp;/&nbsp;</il></a>
-            <a href="servicos.html"><il>Serviços&nbsp;/&nbsp;</il></a>
-            <a href="depoimentos.html"><il>Depoimentos&nbsp;/&nbsp;</il></a>
-            <a href=""><il>Contato&nbsp;</il></a>
-          </ul>
-        </nav>
-      </header>
- 
-    <main>
-        <section>
-            <h2>Depoimentos</h2>
+    <title>depoimentos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo da barra de navegação -->
+        <img class="iconeimg" src="imagens/logo_com_fundo.jpg" alt="iconeimg" />
+        <ul>
+          <li><a href="home.html" class="home">Home</a></li>
+          <li><a href="quemsomos.html" class="quemsomos">Quem Somos</a></li>
+          <li><a href="servicos.html" class="servicos">Serviços</a></li>
+          <span class="logobarbershop">BARBERSHOP</span>
+          <li>
+            <a href="depoimentos.html " class="depoimentos">Depoimentos</a>
+          </li>
+          <li><a href="contato.html" class="contato">Contato</a></li>
+          <li>
+            <a href="agendamentonline " class="online">Agendamento Online</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+        <main class="flex-container">
+
+        
+
+        <div class="depoimentos_h1">
+
+            <h1>O que nossos clientes dizem?</h1>
+
+        </div>
+
+
+
+        <section class="item1">
+
+            <p class="texto1">A consultoria de corte mais adequado para o biotipo da pessoa é sem dúvida da melhor
+                qualidade!!! </p>
+
+            <div class="imagem1">
+
+                <img class="elton" src="./imagens/elton.jpg" alt="foto">
+
+            </div>
+
+            <h2 class="nome-pessoa">Elton Muniz</h2>
+
+
         </section>
 
-        <section class="cards">
+        <section class="item2">
 
-            <div class="cards">
-                <img class="user" src="imagens/tony.jpg" alt="tony">
-                <h3>Tony Stark</h3>
-                <p>
-                    A consultoria de corte mais adequado para o biotipo da pessoa é sem dúvida da melhor qualidade!!!
-                    Sem falar o corte que não deixa dúvidas de que eles sabem o que estão fazendo!!!!
-                </p>
+            <p class="texto2">Ótimo espaço para corte de cabelo e barba! Uma verdadeira experiência! Atendimento impecável e preços muito bons!</p>
+
+            <div class="imagem2">
+
+                <img class="elton2" src="./imagens/elton2.jpg" alt="foto">
+
             </div>
 
-            <div class="cards">
-                <img class="user" src="imagens/thor.jpg" alt="thor">
-                <h3>Thor</h3>
-                <p>
-                    A consultoria de corte mais adequado para o biotipo da pessoa é sem dúvida da melhor qualidade!!!
-                    Sem falar o corte que não deixa dúvidas de que eles sabem o que estão fazendo!!!!
-                </p>
+            <h2 class="nome-pessoa2">Elton Muniz</h2>
+
+
+
+
+
+        </section>
+
+        <section class="item3">
+
+            <p class="texto3">Ambiente bacana com excelentes amigos/profissionais. Recomendo!!!</p>
+
+            <div class="imagem3">
+
+                <img class="elton3" src="./imagens/elton3.jpg" alt="foto">
+
             </div>
 
-            <div class="cards">
-                <img class="user" src="imagens/cap.jpg" alt="cap">
-                <h3>Capitão</h3>
-                <p>
-                    A consultoria de corte mais adequado para o biotipo da pessoa é sem dúvida da melhor qualidade!!!
-                    Sem falar o corte que não deixa dúvidas de que eles sabem o que estão fazendo!!!!
-                </p>
-            </div>
+
+            <h2 class="nome-pessoa3">Elton Muniz</h2>
+
+
+
+
 
 
         </section>
@@ -68,23 +119,54 @@
 
     </main>
 
+    <section class="sugestao">
 
+
+
+        <section class="formulario1">
+
+
+            <div class="text-form">
+
+
+                <h3 class="texto4">Deixe seu elogio, crítica ou sugestão abaixo e envie para gente!</h3>
+
+
+
+                <div class="form">
+
+
+                    <form class="formulario2">
+                        <textarea class="mensagem" minlength=5 maxlength=85 name="sugestao"></textarea>
+                        <button class="botao" type="submit">Enviar sugestão</button>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
+    </section>
 
     <footer>
-        <span>Copyright © 2022 - Todos Direitos Reservados</span>
-        <img src="" alt="facebook">
-        <img src="" alt="instagram">
-      </footer>
-
+      <span class="direitosreserva"
+        >Copyright © 2022 - Barbershop Social Club. Todos Direitos Reservados.
+        Desenvolvido por protechweb.</span
+      >
+      <img class="face" src="imagens/face.png" height="30px" alt="facebook" />
+      <img class="zap" src="imagens/zap.png" height="30px" alt="whatsapp" />
+      <img
+        class="insta"
+        src="imagens/insta.png"
+        height="30px"
+        alt="instagram"
+      />
     </footer>
-
-
-
-
-
-
-</body>
-
-
-
+  </body>
 </html>

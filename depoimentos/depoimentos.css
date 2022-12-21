@@ -1,0 +1,284 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.flex-container{
+  background-image: url("/Projeto-integrador--Grupo-8/imagens/fundodepoimentos.jpg");
+  width: 1263px;
+  height: 812px;
+  align-items: center;
+  /* margin-top: 100px; */
+  
+  background-color: #231806;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.depoimentos_h1git{
+  color: wheat;
+  margin-bottom: 57%;
+  position: absolute;
+  /*display: flex;*/
+  
+}
+
+
+.item1{
+  box-sizing: border-box;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  background-color: #A299AD;
+  border: 2px solid black;
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.texto1{
+    display: flex;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.25em;
+    color: rgb(20, 20, 20);
+}
+
+.imagem1{
+  /*background-color: red;*/
+  display: flex;
+  width: 185px;
+  height: 175px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+}
+.elton{
+    width: 147px;
+    /*padding: 12px;*/
+    display: flex;
+   /* margin: 15px 17px;*/
+    border-radius: 50%;
+    height: 155px;
+}
+
+.nome-pessoa{
+    display: flex;
+    /*padding: 15px;*/
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 20px auto 0 27px;
+
+}
+
+/* Final da edição da primeira caixa de depoimentos */
+
+.item2{
+  box-sizing: border-box;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  background-color: #A299AD;
+  border: 2px solid black;
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.texto2{
+
+  display: flex;
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 1.25em;
+  color: rgb(20, 20, 20);
+
+}
+
+.imagem2{
+    /*background-color: red;*/
+    display: flex;
+    width: 185px;
+    height: 175px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+
+}
+
+.elton2{
+
+  width: 147px;
+  /*padding: 12px;*/
+  display: flex;
+ /* margin: 15px 17px;*/
+  border-radius: 50%;
+  height: 155px;
+
+}
+
+.nome-pessoa2{
+  display: flex;
+  /*padding: 15px;*/
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px auto 0 27px;
+
+}
+
+/* Final da edição da segunda caixa de depoimentos */
+
+
+
+.item3{
+  box-sizing: border-box;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  background-color: #A299AD;
+  border: 2px solid black;
+  width: 300px;
+  height: 450px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.texto3{
+  display: flex;
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 1.25em;
+  color: rgb(20, 20, 20);
+
+}
+.imagem3{
+  /*background-color: red;*/
+  display: flex;
+  width: 185px;
+  height: 175px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+
+}
+
+.elton3{
+  width: 147px;
+  /*padding: 12px;*/
+  display: flex;
+ /* margin: 15px 17px;*/
+  border-radius: 50%;
+  height: 155px;
+
+}
+
+.nome-pessoa3{
+
+  display: flex;
+  /*padding: 15px;*/
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 20px auto 0 27px;
+
+}
+
+/* Final da edição da terceira caixa de depoimentos */
+
+.sugestao{
+  display: flex;
+  height: 135px;
+  background-color: #a299ad
+  
+
+
+}
+
+.texto4 {
+    /* text-align: center; */
+    display: flex;
+    position: initial;
+    font-size: 1.50em;
+}
+
+.formulario1{
+  text-align: center;
+  display: flex;
+  width: 100%;
+
+}
+
+.text-form{
+  display: flex;
+    /* display: block; */
+    position: relative;
+    /* left: 255px; */
+    left: 60px;
+    flex-direction: column;
+    /* padding: 2px; */
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+.form{
+  display: flex;
+  margin: 25px;
+  display: flex;
+  padding: 5px;
+  width: 85%;
+
+
+}
+
+.mensagem{
+    width: 620px;
+    padding: 5px;
+    position: relative;
+    right: 1px;
+}
+  
+
+
+
+
+.formulario2{
+
+  position: relative;
+    margin: 5px;
+    display: flex;
+    padding: 5px;
+    left: 105px;
+
+}
+.botao{
+  background: #bfbdc1;;
+    border-radius: 10px;
+    border: solid black;
+    position: relative;
+    left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,47 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serviços</title>
+    <!-- chamando o css -->
+    <link rel="stylesheet" href="header_footer.css" />
+    <link rel="stylesheet" href="servicos/servicos.css" />
+
+    <!-- adicionando fontes do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonte barra de navegação -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonte texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Kdam+Thmor+Pro&family=Lobster&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>serviços</title>
   </head>
   <body>
     <header>
-      <!--Logo e barra de navegação-->
-      <!--Logo-->
-      <img
-        src="/Projeto-integrador--Grupo-8/imagens/logo_teste.jpeg"
-        alt="Logo da barbearia barbershop"
-      />
-
-      <!--Barra de navegação-->
       <nav>
+        <!-- logo da barra de navegação -->
+        <img class="iconeimg" src="imagens/logo_com_fundo.jpg" alt="iconeimg" />
+
         <ul>
-          <a href=""><il>Home&nbsp;/&nbsp;</il></a>
-          <a href=""><il>Serviços&nbsp;/&nbsp;</il></a>
-          <a href="/Projeto-integrador--Grupo-8/quemsomos.html"
-            ><il>Quem somos&nbsp;/&nbsp;</il></a
-          >
-          <a href="/Projeto-integrador--Grupo-8/depoimentos.html"
-            ><il>Depoimentos&nbsp;/&nbsp;</il></a
-          >
-          <a href=""><il>Contato</il></a>
+          <li><a href="home.html" class="home">Home</a></li>
+          <li><a href="quemsomos.html" class="quemsomos">Quem Somos</a></li>
+          <li><a href="servicos.html" class="servicos">Serviços</a></li>
+          <span class="logobarbershop">BARBERSHOP</span>
+          <li>
+            <a href="depoimentos.html " class="depoimentos">Depoimentos</a>
+          </li>
+          <li><a href="contato.html" class="contato">Contato</a></li>
+          <li>
+            <a href="agendamentonline " class="online">Agendamento Online</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main><!--Imagens e banner--></main>
+    <main>
+      
+      <!-- texto de apresentação da página -->
+      <h1>Nossos principais serviços oferecidos</h1>
+
+
+      <!--Imagens e banner-->
+      <!--Iamgens de Serviços-->
+      <section class="container">
+        <!-- <h1>Nossos Serviços</h1> -->
+        <!--<p>serviços</p>-->
+        <p>Barba</p>
+        <p>Corte de cabelo</p>
+        <p>Sobrancelhas</p>
+        <p>Massagem</p>
+
+        <img id="img_1" src="imagens/servico_1.jpg" alt="servico 1" />
+        <!--<p>Corte de cabelo</p>-->
+        <img id="img_2" src="imagens/servico_2.jpg" alt="serviço 2" />
+        <!-- <p>Sobrancelha</p>-->
+        <img id="img_3" src="imagens/servico_3.jpg" alt="serviço 3" />
+
+        <img id="img_4" src="imagens/servico_4.jpg" alt="serviço 4" />
+      </section>
+
+      <!--Imagens de Cortes mais procurados-->
+      <div class="servicos_mais_procurados">
+       <h2>Nossos cortes marculinos mais procurados</h2>
+       <p id="apresentacao_cortes">Dos cortes mais procurados no salão há aqueles que possuem distaques, como os "BUZZCUT FADE", "FALLING QUIFF" e o " TOP DREADS";</p>
+       <p>1º BUZZCUT FADE – O buzzcut nada mais é do que o clássico cabelo raspado. Mas na sua versão modernizada<p>
+       <p>2º FALLING QUIFF - o "Topete em queda" é um topete caido com a diferença que não é acidental e, sim, intencional. O objetivo é dar um toque de descontração para o visual.</p>  
+       <p id="corte_3">3º TOP DREADS – Agora uma sugestão específica para quem tem cabelo afro: o top dreads. Ele é uma versão atualizada do tradicional dreadlocks, com mechas de fios entrelaçados. </p>
+       <img src="imagens/banner.png" alt="Noosos cortes mais procurados" />
+      </div>
+    </main>
 
     <footer>
-      <h2>Nossos Parceiros</h2>
-      <img src="" alt="parceiro1" />
-      <img src="" alt="parceiro2" />
-      <img src="" alt="parceiro3" /><br /><br />
-
-      <span>Copyright © 2022 - Todos Direitos Reservados</span>
-      <img src="" alt="facebook" />
-      <img src="" alt="instagram" />
+      <span class="direitosreserva"
+        >Copyright © 2022 - Barbershop Social Club. Todos Direitos Reservados.
+        Desenvolvido por protechweb.</span
+      >
+      <img class="face" src="imagens/face.png" height="30px" alt="facebook" />
+      <img class="zap" src="imagens/zap.png" height="30px" alt="whatsapp" />
+      <img
+        class="insta"
+        src="imagens/insta.png"
+        height="30px"
+        alt="instagram"
+      />
     </footer>
   </body>
 </html>

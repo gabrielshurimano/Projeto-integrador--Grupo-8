@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+main{
+  background-color: #a299ad;
+}
+
+h1{
+  background-color: #a299ad;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: #231806;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: 26px;
+}
+
+/* **************************************************** Editandos os containeters **************************************************** */
+.container {
+  /* imagem de fundo */
+  background-image:url("imagens/fundo_servicos.jpg");
+  /* background-color: #342909; */
+  height: 250px;
+  padding: 20px 10px 20px 45px;
+  margin: 0%;
+
+  display: grid;
+  grid-template-columns: 25px 25px 25px 25px;
+  grid-template-rows: 50px 50px;
+  column-gap: 300px;
+  /* row-gap: ; */
+
+  /* paramos por aqui, falta ajustar para a descrição dos serviços ficar bem centralizado */
+}
+
+.container img {
+  background-color: 
+  #231806
+  ;
+  padding: 20px;
+  margin: 0px;
+  /* border: 1px solid rgb(248, 224, 7); */
+  width: 200px;
+  height: 200px;
+}
+
+.container p {
+  display: flex;
+  justify-content: center;
+  /* borda */
+  /* border: 2px solid cornflowerblue; */
+  padding-left: 40px;
+  padding-right: 40px;
+ 
+  /* larguda da caixa com o texto */
+  width: 155px;
+  height: 25px;
+  /* fonte usada no nome dos serviços */
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.servicos_mais_procurados{
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicos_mais_procurados h2{
+  margin-bottom: 20px;
+}
+
+.servicos_mais_procurados p{
+  margin-top: 1px;
+}
+
+.servicos_mais_procurados img{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: inset 3px #bdb3b3;
+}
+
+#apresentacao_cortes{
+  margin-bottom: 10px;
+}
+
+#corte_3{
+
+  border-bottom: solid 1px #231806;
+  padding-bottom: 30px;
+}
