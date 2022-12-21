@@ -23,7 +23,7 @@ h1{
 
 /* **************************************************** Editandos os containeters **************************************************** */
 .container {
-  background-image:url("imagens/fundo_servicos.jpg");
+  background-image:url("/imagens/fundo_servicos.jpg");
   /* imagem de fundo */
   
   /* background-color: #342909; */
