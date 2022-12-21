@@ -7,8 +7,8 @@
 }
 
 .flex-container{
-  background-image: url("/Projeto-integrador--Grupo-8/imagens/fundodepoimentos.jpg");
-  width: 1263px;
+  background-image: url("../imagens/fundodepoimentos.jpg");
+  width: 1320;
   height: 812px;
   align-items: center;
   /* margin-top: 100px; */
