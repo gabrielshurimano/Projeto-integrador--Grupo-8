@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    background: #242933;
+main {
+    background-image: url(../imagens/fundo_cadastro.jpg);
+    background-size: cover;
     display: flex;
-    font-family: Poppins;
+    font-family: 'Kdam Thmor Pro', sans-serif;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -18,20 +13,21 @@ body {
 }
 
 .container {
-    background-color: #2F3644;
+    background: rgba(2, 5, 15, 0.4);
     border-radius: 5px;
     border: 2px solid #3E445B;
     width: 450px;
     max-width: 100%;
+    padding-right: 30px;
 }
 
-.header {
+.formulario {
     padding: 30px 40px;
 }
 
-.header h2 {
+.formulario h2 {
     font-weight: 600;
-    color: #ACBAE1;
+    color: #BFBDC1;
     font-size: 30px;
 }
 
@@ -48,7 +44,10 @@ body {
 .controle_de_formulario label {
     display: inline-block;
     margin-bottom: 5px;
-    color: #828CAD;
+    color: #BFBDC1;
+    transition-delay: as specified;
+
+
 }
 
 .controle_de_formulario input {
@@ -101,20 +100,25 @@ body {
 }
 
 .form button {
-    background-color: #6C63FF;
+    background: rgba(225, 225, 225, 0.4);
     border-radius: 5px;
     color: #fff;
     padding: 15px;
     font-size: 15px;
     font-weight: 600;
-    width: 100%;
+    /* width: 100%; */
 
     margin-top: 5px;
 
     cursor: pointer;
+    transition: 500ms linear; 
+    
 }
 
 .form button:hover {
-    background-color: #584ff5;
-    transition: 0.3s;
-}
+    transition: 0.1s;
+    color:black;
+    background: green;
+  }
+
+
