@@ -54,12 +54,12 @@ li :hover{
 .servicos,
 .depoimentos,
 .contato,
-.agendaonline{
+.login_cadastro{
   color: #bfbdc1;
   padding: 3px ;
 }
 
-.agendaonline{
+.login_cadastro{
   background-color: #6d6a7594;
   padding: 8px;
   border-radius: 3px;
