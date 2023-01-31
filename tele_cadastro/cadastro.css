@@ -122,3 +122,29 @@ main {
   }
 
 
+/* definindo cor verde e vermelho para o input */
+.controle_de_formulario.sucesso input{
+    border: 3px solid green;
+}
+
+.controle_de_formulario.erro input{
+    border: 3px solid red;
+}
+
+/* definindo o icone de sucesso e erro */
+.controle_de_formulario.sucesso i .img_sucesso {
+    visibility: visible;
+}
+
+.controle_de_formulario.erro i .img_erro {
+    visibility: visible;
+}
+
+
+/* mensagem de erro */
+.controle_de_formulario.erro small {
+    visibility:visible;
+    position: absolute;
+    margin-top: 5px;
+    color: red;
+}
