@@ -1,6 +1,5 @@
 const form = document.getElementById("form");
 
-console.log(form);
 
 let nome_usuario;
 let email_usuario;
