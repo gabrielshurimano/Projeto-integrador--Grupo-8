@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- chamando o css -->
     <link rel="stylesheet" href="header_footer.css" />
-    <link rel="stylesheet" href="quemsomos/quemsomos.css" />
+    <link rel="stylesheet" href="./quemsomos/quemsomos.css">
 
     <!-- adicionando fontes do projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,6 +25,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <script src="./quemsomos/quemsomos.js" defer></script>
 
 
     <title>Quem Somos</title>
@@ -45,9 +46,9 @@
           </li>
           <li><a href="contato.html" class="contato">Contato</a></li>
           <li>
-            <a href="./tela_cadastro.html" class="login_cadastro">
-              Login/Cadastro
-          </a>
+            <a href="contato.html" class="agendaonline">
+              AGENDAMENTO ONLINE
+            </a>
         </li>
         </ul>
       </nav>
@@ -55,9 +56,25 @@
 
     <main>
       
-      <h1>Quem Somos</h1>
+       <h1>Quem Somos</h1> 
+      
+       <div class="container">
+        <button class="arrow-left control" aria-label="Previous image"> <= </button>
+        <button class="arrow-right control" aria-label="Next Image"> => </button>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img src="./imagens/quemsomos.png" width="1425px" height="500px" class="item current-item">
+                <img src="./imagens/missão.png" width="1425px" height="500px"  class="item">
+                <img src="./imagens/visão.png" width="1425px" height="500px"  class="item">
+                <img src="./imagens/valores.png" width="1425px" height="500px" class="item">
+            </div>
+        </div>
+    </div>
+
+
+      <!--
       <div class="cards">
-      <!-- <h1>Uma nova barbearia trazendo um novo estilo para você!</h1> -->
+       <h1>Uma nova barbearia trazendo um novo estilo para você!</h1>
       <p> Criada em 2022 e inspirada nas antigas barbearias de Nova York, 
         nossa barbearia possui um ambiente confortável, descontraído e exclusivamente masculino,
         contando com espaço para você tomar uma cerveja gelada e assistir aos seus esportes favoritos.
@@ -68,6 +85,7 @@
       </div>
       <h2> Missão </h2>
       <div class="cards">
+      
       <p>
         Servir todos os nossos clientes e amigos com um padrão único e excelência, utilizando os melhores produtos disponíveis com os 
         profissionais mais capacitados para que toda a experiência em nossa Barbearia seja inesquecível.
@@ -85,14 +103,15 @@
 
       <h2> Valores </h2>
       <div class="cards">
+         
         <p>
           Prezamos pela ética, honestidade, transparência, com o compromisso de estar sempre inovando e capacitando os profissionais, honrando pela qualidade de vida da nossa equipe e clientes, onde todos 
           são importantes para nossa existência.
         </p>
       <img src="./imagens/QS2.png" alt="cadeirabarbearia" width="2250px">
-    </div>
+    </div> 
 
-    </main>
+    </main> -->
 
     <footer>
       <span class="direitosreserva"
