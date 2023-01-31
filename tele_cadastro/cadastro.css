@@ -148,3 +148,13 @@ main {
     margin-top: 5px;
     color: red;
 }
+
+.span-required{
+    display: none;
+    color: white;
+}
+
+
+
+
+

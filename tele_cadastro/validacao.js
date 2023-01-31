@@ -1,68 +1,61 @@
-const form = document.getElementById("form");
+const form   = document.getElementById("form")
+const campos = document.querySelectorAll(".required")
+const spans  = document.querySelectorAll(".span-required")
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
 
-let nome_usuario;
-let email_usuario;
-let whatsapp;
-let password;
-let conf_password;
+// Não está funcionado o Submit
+form.addEventListener('submit', (event) => {
+     console.log('teste')
+})
 
-form.addEventListener("submit", (e) => {
-  nome_usuario = document.getElementById("nome_usuario");
-  email_usuario = document.getElementById("email_usuario");
-  whatsapp = document.getElementById("whatsapp");
-  password = document.getElementById("password");
-  conf_password = document.getElementById("conf_password");
-  e.preventDefault();
-  checkInputs();
-});
-
-// removendo todos os espaçamentos em branco com o "trim"
-function checkInputs() {
-  const nome_usuarioValue = nome_usuario.value.trim();
-  const email_usuarioValue = email_usuario.value.trim();
-  const whatsappValue = whatsapp.value.trim();
-  const passwordValue = password.value.trim();
-  const conf_passwordValue = conf_password.value.trim();
-
-  if (nome_usuarioValue === "") {
-    //mostrar o erro e adicionando a classe erro
-    erroValidador(nome_usuario, "Preencha esse campo");
-  } else {
-    //adicionar a classe de sucesso
-  }
-
-  if (!validateEmail(email_usuarioValue)) {
-    //mostrar o erro e adicionando a classe erro
-    erroValidador(email_usuario, "Email inválido!");
-  } else {
-    //adicionar a classe de sucesso
-  }
-
-  if (whatsappValue === "") {
-    //mostrar o erro e adicionando a classe erro
-    erroValidador(whatsapp, "Preencha esse campo");
-  } else {
-    //adicionar a classe de sucesso
-  }
-
-  if (passwordValue !== conf_passwordValue) {
-    //mostrar o erro e adicionando a classe erro
-    erroValidador(password, "As senhas não são iguais!");
-  } else {
-    //adicionar a classe de sucesso
-  }
+function SetError(index){
+    campos[index].style.border = "3px solid red"
+    spans[index].style.display = "block";
 }
 
-//função
-function erroValidador(input, message) {
-  const controle_de_formulario = input.parentElement;
-  const small = controle_de_formulario.querySelector("small");
-  controle_de_formulario.className = "controle_de_formulario erro";
+function removeError(index){
+    campos[index].style.border = ""
+    spans[index].style.display = "none";
 }
 
-function validateEmail(email) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+
+function nameValidate(){
+    if (campos[0].value.length < 3)  {
+        SetError(0);
+    } else {
+        removeError(0)
+   }
 }
+
+function emailValidate(){
+    if (!emailRegex.test(campos[1].value)){
+        SetError(1);
+    } else {
+        removeError(1)
+
+    }
+}
+
+function mainPasswordValidate(){
+    if (campos[3].value.length < 8) {
+        SetError(3);
+    } else {
+        removeError(3);
+        ComparePassword();
+    }
+}
+
+function ComparePassword(){
+
+        if(campos[3].value == campos[4].value && campos[4].value.length >= 8){
+            removeError(4);
+        } else {
+            SetError(4);
+       }
+
+}
+
+
+
+

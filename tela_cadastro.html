@@ -7,6 +7,7 @@
     <!-- chamando o css -->
     <link rel="stylesheet" href="header_footer.css" />
     <link rel="stylesheet" href="./tele_cadastro/cadastro.css">
+    <script src="./tele_cadastro/validacao.js" defer></script>
 
     <!-- adicionando fontes do projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,65 +64,42 @@
     <div class="formulario">
       <h2>Criar cadastro</h2>
     </div>
-    <form class="form" id="form">
-
+    <form class="form" id="form" onsubmit="validaForm()">
 
       <!-- solicitando o user name do usuário -->
       <div class="controle_de_formulario ">
         <label for="nome_usuario">Nome</label>
-        <input type="text" id="nome_usuario">
-        <i><img class="img_sucesso" src="./imagens/success-icon.svg" alt="deu certo"></img>
-        <i><img src="./imagens/error-icon.svg" alt="deu errado"></img>
-
-          <!-- tag que irá da o aviso de erro -->
-          <small>Erro!!!</small>
+        <input type="text" placeholder="Digte seu nome" class="inputs required" oninput="nameValidate()">
+        <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
       </div>
 
       <!-- solicitando o email do usuário -->
       <div class="controle_de_formulario ">
         <label for="email_usuario">Email</label>
-        <input type="text" id="email_usuario">
-        <i><img class="img_sucesso" src="./imagens/success-icon.svg" alt="deu certo"></img>
-        <i><img class="img_erro" src="./imagens/error-icon.svg" alt="deu errado"></img>
-
-          <!-- tag que irá da o aviso de erro -->
-          <small>Erro!!!</small>
+        <input type="text" class="inputs required" oninput="emailValidate()">
+        <span class="span-required"> Digite um email válido </span>
       </div>
-
         <!-- solicitandoo número do usuário -->
         <div class="controle_de_formulario">
           <label for="whatsapp">whatsapp</label>
-          <input type="number" id="whatsapp">
-          <i><img class="img_sucesso" src="./imagens/success-icon.svg" alt="deu certo"></img>
-          <i><img class="img_erro" src="./imagens/error-icon.svg" alt="deu errado"></img>
-  
-            <!-- tag que irá da o aviso de erro -->
-            <small>Erro!!!</small>
+          <input type="number" placeholder="Digite seu número com DDD" class="inputs required">
+          <span class="span-required"> Digite somente números </span>
         </div>
 
       <!-- solicitando a senha do usuário -->
       <div class="controle_de_formulario">
         <label for="password">Senha</label>
-        <input type="password" id="password">
-        <i><img class="img_sucesso" src="./imagens/success-icon.svg" alt="deu certo"></img>
-        <i><img class="img_erro" src="./imagens/error-icon.svg" alt="deu errado"></img>
-
-          <!-- tag que irá da o aviso de erro -->
-          <small>Erro!!!</small>
+        <input type="password" class="inputs required" oninput="mainPasswordValidate()"  >
+        <span class="span-required"> Digite uma senha com no minimo 8 caracteres </span>
       </div>
 
       <!-- solicitando a confirmação senha do usuário -->
       <div class="controle_de_formulario">
         <label for="conf_password">Confirmar senha</label>
-        <input type="password" id="conf_password">
-        <i><img class="img_sucesso" src="./imagens/success-icon.svg" alt="deu certo"></img>
-        <i><img class="img_erro" src="./imagens/error-icon.svg" alt="deu errado"></img>
-
-          <!-- tag que irá da o aviso de erro -->
-          <small>Erro!!!</small>
+        <input type="password" class="inputs required" oninput="mainPasswordValidate()">
+        <span class="span-required"> Senhas devem ser compativeis</span>
       </div>
-
-        <button type="submit">Criar cadastro</button>
+        <button type="button">Criar cadastro</button>
     </form>
 
   </div>
@@ -140,6 +118,5 @@
     alt="instagram"
   />
 </footer>
-<script src="./tele_cadastro/validacao.js"></script>
 </body>
 </html>
