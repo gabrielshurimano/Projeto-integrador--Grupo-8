@@ -64,7 +64,7 @@
     <div class="formulario">
       <h2>Criar cadastro</h2>
     </div>
-    <form class="form" id="form" onsubmit="validaForm()">
+    <form action="" class="form" id="form">
 
       <!-- solicitando o user name do usuário -->
       <div class="controle_de_formulario ">
@@ -76,7 +76,7 @@
       <!-- solicitando o email do usuário -->
       <div class="controle_de_formulario ">
         <label for="email_usuario">Email</label>
-        <input type="text" class="inputs required" oninput="emailValidate()">
+        <input type="text" class="inputs required" placeholder="Digite seu melhor email" oninput="emailValidate()">
         <span class="span-required"> Digite um email válido </span>
       </div>
         <!-- solicitandoo número do usuário -->
@@ -89,17 +89,17 @@
       <!-- solicitando a senha do usuário -->
       <div class="controle_de_formulario">
         <label for="password">Senha</label>
-        <input type="password" class="inputs required" oninput="mainPasswordValidate()"  >
+        <input type="password" class="inputs required" placeholder="Digite sua senha" oninput="mainPasswordValidate()"  >
         <span class="span-required"> Digite uma senha com no minimo 8 caracteres </span>
       </div>
 
       <!-- solicitando a confirmação senha do usuário -->
       <div class="controle_de_formulario">
         <label for="conf_password">Confirmar senha</label>
-        <input type="password" class="inputs required" oninput="mainPasswordValidate()">
+        <input type="password" class="inputs required" placeholder="Confirme sua senha" oninput="mainPasswordValidate()">
         <span class="span-required"> Senhas devem ser compativeis</span>
       </div>
-        <button type="button">Criar cadastro</button>
+        <button type="submit">Criar cadastro</button>
     </form>
 
   </div>
