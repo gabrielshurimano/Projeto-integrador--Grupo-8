@@ -24,8 +24,9 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
 
+    />
+    <script src="depoimentos/depoimento.js" defer> </script>
 
     <title>depoimentos</title>
   </head>
@@ -53,7 +54,7 @@
     </header>
 
         <main class="flex-container">
-
+          
         
 
         <div class="depoimentos_h1">
@@ -64,33 +65,33 @@
 
 
 
-        <section class="item1">
+        <section onmouseover="cardfundo()" onmouseOut="cardfundo1()" class="item1" id="card1">
 
             <p class="texto1">A consultoria de corte mais adequado para o biotipo da pessoa é sem dúvida da melhor
                 qualidade!!! </p>
 
             <div class="imagem1">
 
-                <img class="elton" src="./imagens/elton.jpg" alt="foto">
+                <img class="elton" src="./imagens/homem1.jpg" alt="foto">
 
             </div>
 
-            <h2 class="nome-pessoa">Elton Muniz</h2>
+            <h2 class="nome-pessoa">Marcelo</h2>
 
 
         </section>
 
-        <section class="item2">
+        <section onmouseover="cardfundo2()" onmouseOut="cardfundo21()" class="item2" id="card2">
 
             <p class="texto2">Ótimo espaço para corte de cabelo e barba! Uma verdadeira experiência! Atendimento impecável e preços muito bons!</p>
 
             <div class="imagem2">
 
-                <img class="elton2" src="./imagens/elton2.jpg" alt="foto">
+                <img class="elton2" src="./imagens/homem2.jpg" alt="foto">
 
             </div>
 
-            <h2 class="nome-pessoa2">Elton Muniz</h2>
+            <h2 class="nome-pessoa2">Leo Barbosa</h2>
 
 
 
@@ -98,9 +99,9 @@
 
         </section>
 
-        <section class="item3">
+        <section onmouseover="cardfundo3()" onmouseOut="cardfundo22()" class="item3" id="card3">
 
-            <p class="texto3">Ambiente bacana com excelentes amigos/profissionais. Recomendo!!!</p>
+            <p class="texto3">Ambiente bacana com excelentes amigos/profissionais. Super Recomendo e voltarei mais vezez!!!</p>
 
             <div class="imagem3">
 
@@ -139,8 +140,9 @@
 
 
                     <form class="formulario2">
-                        <textarea class="mensagem" minlength=5 maxlength=85 name="sugestao"></textarea>
-                        <button class="botao" type="submit">Enviar sugestão</button>
+                        <textarea class="mensagem" minlength=5 maxlength=100 name="sugestao"></textarea>
+
+                        <button onmouseover="btn1()" onmouseOut="btn2()" class="botao" id="btn" type="submit">Enviar</button>
                     </form>
 
                 </div>

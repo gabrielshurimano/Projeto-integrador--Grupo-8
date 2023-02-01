@@ -39,6 +39,11 @@
   align-items: flex-start;
 }
 
+#card1:hover{
+  transform: scale(1.1);
+  transition: 800ms;
+}
+
 .texto1{
     display: flex;
     margin: 20px auto;
@@ -87,6 +92,11 @@
   height: 450px;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#card2:hover{
+  transform: scale(1.1);
+  transition: 800ms;
 }
 
 .texto2{
@@ -146,6 +156,10 @@
   flex-direction: column;
   align-items: flex-start;
 }
+#card3:hover{
+  transform: scale(1.1);
+  transition: 800ms;
+}
 
 .texto3{
   display: flex;
@@ -170,7 +184,7 @@
   width: 147px;
   /*padding: 12px;*/
   display: flex;
- /* margin: 15px 17px;*/
+/* margin: 15px 17px;*/
   border-radius: 50%;
   height: 155px;
 
@@ -259,11 +273,25 @@
 
 }
 .botao{
+  
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 12px;
+  padding: 10px 35px;
+  border-radius: 10px;
+  
+
+
+    
+  
+
+/*botão antigo
   background: #bfbdc1;;
     border-radius: 10px;
     border: solid black;
     position: relative;
-    left: 10px;
+    left: 10px;*/
 }
 
 
