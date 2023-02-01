@@ -13,7 +13,19 @@
 
 body{
   background-color:#A299AD;
+  background-image: url("./imagens/fundo_servicos.jpg");
+  
 }
+
+.formulario1{
+  color: #FFFFFF;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
 
 
 .copyright {
@@ -57,12 +69,17 @@ form label, form p{
 }
 
 .butao{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 1px;
+  padding: 10px 20px;
+  border-radius: 10px;
   background-color:#342909;
   /* fundo do botão */
   color:rgb(251, 251, 251);
   /* cor da letra */
   cursor: pointer;
   /* mudar cursor */
-  border-radius: 12px; 
   /* arredondar borda */
 }
