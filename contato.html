@@ -53,8 +53,8 @@
                 <a href="contato.html" class="contato">Contato</a></li>
 
             <li>
-                <a href="./tela_cadastro.html" class="login_cadastro">
-                    Login/Cadastro
+                <a href="contato.html" class="agendaonline">
+                    AGENDAMENTO ONLINE
                 </a>
             </li>
 
@@ -63,9 +63,9 @@
     </header>
 
     <main>
-        <form class="formulario1">
-        <label for="nomesobrenome"> Nome e Sobrenome</label>
-        <input type="text" id="nomesobrenome" class="input-padrao">
+        <form id="formulario">
+        <label for="nome"> Nome e Sobrenome</label>
+        <input type="text" id="nome" class="input-padrao" >
         
         <label for="email"> Email </label>
         <input type="text" id="email" class="input-padrao">
@@ -79,19 +79,25 @@
         
             <div>	
             <p> Como Prefere nosso contato? </p>
-            <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+            <label for="radio-email"> 
+                <input type="radio" checked name="contato" value="email" id="radio-email">Email
+            </label>
+            
+            <label for="radio-telefone">
+                <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone
+            </label>
             
         
-        
-            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+            <label for="radio-whatsapp">
+                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp
+            </label>
             
         
-            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
-            
-        <div>
-            <label class="checkbox"> <input type="checkbox" > Gostaria de receber nossas novidades por email?</label>
+            <label class="checkbox">
+                 <input type="checkbox" > Gostaria de receber nossas novidades por email?
+            </label>
         
-        <input class="butao" type="submit" value="Enviar formulario">
+        <button id="mostrarAlerta" class="butao" type="submit">Enviar formulario</button>
         </form>
         
         
@@ -118,5 +124,19 @@
         alt="instagram"
         />
     </footer>
+    <div class="alerta" id="alerta">
+        <p class="mensagem">Enviado com sucesso!</p>
+      </div>
+      <div class="alerta-error" id="alerta-error">
+        <p class="mensagem-error">Existem campos a serem preenchidos!</p>
+      </div>
+     <script src="contato.js">
+
+        
+        
+
+
+     </script>
+
     </body>
 </html>

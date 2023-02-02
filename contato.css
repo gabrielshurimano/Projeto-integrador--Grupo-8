@@ -4,82 +4,66 @@
   list-style: none;
   text-decoration: none;
 }
-
-
-
-
 /* -------------------------------- */
 
-
-body{
-  background-color:#A299AD;
-  background-image: url("./imagens/fundo_servicos.jpg");
-  
+body {
+  background-color: #a299ad;
 }
-
-.formulario1{
-  color: #FFFFFF;
-  flex-direction: column;
-  align-content: space-between;
-  justify-content: space-evenly;
-  align-items: center;
-  
-}
-
-
 
 .copyright {
-
-	color: #FFFFFF;
-	font-size: 13px;
-
+  color: #ffffff;
+  font-size: 13px;
 }
-
 main {
-
-width: 940px;
-margin: 0 auto;
-
-
+  width: 940px;
+  margin: 0 auto;
 }
 
-form{
-
-	margin: 40px 0;
+form {
+  margin: 40px 0;
 }
 
-form label, form p{
-
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+form label,
+form p {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
-.input-padrao{
-
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 2px;
-	width:  50%;
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 2px;
+  width: 50%;
 }
 
 .checkbox {
-
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
-.butao{
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
-  margin: 0 1px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color:#342909;
+.butao {
+  background-color: #342909;
   /* fundo do botão */
-  color:rgb(251, 251, 251);
+  color: rgb(251, 251, 251);
+  padding: 10px;
   /* cor da letra */
   cursor: pointer;
   /* mudar cursor */
+  border-radius: 12px;
   /* arredondar borda */
+}
+.alerta,
+.alerta-error {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fcf8e3;
+  border: 1px solid #faf2cc;
+  border-radius: 0.25rem;
+  z-index: 1;
+  display: none;
 }
