@@ -53,17 +53,45 @@ function checkInputs() {
   }
 }
 
-//função
-function erroValidador(input, message) {
-  const controle_de_formulario = input.parentElement;
-  const small = controle_de_formulario.querySelector("small");
-  controle_de_formulario.className = "controle_de_formulario erro";
+function removeError(index) {
+  campos[index].style.border = "";
+  spans[index].style.display = "none";
 }
 
-function validateEmail(email) {
-  const re =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(String(email).toLowerCase());
+let nomeValidado = false;
+
+function nameValidate() {
+  if (campos[0].value.length < 3) {
+    SetError(0);
+    nomeValidado = false;
+  } else {
+    removeError(0);
+    nomeValidado = true;
+  }
+}
+
+let emailValidado = false;
+function emailValidate() {
+  if (!emailRegex.test(campos[1].value)) {
+    SetError(1);
+    emailValidado = false;
+  } else {
+    removeError(1);
+    emailValidado = true;
+  }
+}
+
+let senhaValidada = false;
+
+function mainPasswordValidate() {
+  if (campos[3].value.length < 8) {
+    SetError(3);
+    senhaValidada = false;
+  } else {
+    removeError(3);
+    ComparePassword();
+    senhaValidada = true;
+  }
 }
 
 function validateName(name) {

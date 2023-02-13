@@ -4,65 +4,80 @@
   list-style: none;
   text-decoration: none;
 }
-
-
-
-
 /* -------------------------------- */
 
-
-body{
-  background-color:#A299AD;
+body {
+  /* background-color: #a299ad; */
+  background-image: url(../imagens/fundo_cadastro.jpg);
+  background-size: cover;
 }
-
 
 .copyright {
-
-	color: #FFFFFF;
-	font-size: 13px;
-
+  color: #ffffff;
+  font-size: 13px;
 }
-
 main {
-
-width: 940px;
-margin: 0 auto;
-
-
+  width: 940px;
+  margin: 0 auto;
+  padding-right: 70px;
+  margin-left: 450px;
 }
 
-form{
-
-	margin: 40px 0;
+form {
+  margin: 40px 0;
+  background: rgba(2, 5, 15, 0.4);
+  /* border-radius: 5px; */
+  border: 2px solid #3E445B;
+  padding-left: 350px;
+  padding-right: 20px;
+  padding-top:20px ;
+  padding-bottom:20px ;
+  width: 80vh;
+  /* max-width: 100%; */
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #BFBDC1;
 }
 
-form label, form p{
-
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
+form label,
+form p {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
 }
 
-.input-padrao{
-
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 2px;
-	width:  50%;
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 2px;
+  width: 50%;
+  /* Arredondar borda */
+  border-radius: 5px;
 }
 
 .checkbox {
-
-	margin: 20px 0;
+  margin: 20px 0;
 }
 
-.butao{
-  background-color:#342909;
-  /* fundo do botão */
-  color:rgb(251, 251, 251);
-  /* cor da letra */
-  cursor: pointer;
-  /* mudar cursor */
-  border-radius: 12px; 
-  /* arredondar borda */
+.butao {
+  background: rgba(225, 225, 225, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.alerta,
+.alerta-error {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fcf8e3;
+  border: 1px solid #faf2cc;
+  border-radius: 0.25rem;
+  z-index: 1;
+  display: none;
 }

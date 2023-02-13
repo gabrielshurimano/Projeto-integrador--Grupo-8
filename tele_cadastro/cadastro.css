@@ -5,6 +5,7 @@ main {
     background-size: cover;
     display: flex;
     font-family: 'Kdam Thmor Pro', sans-serif;
+    
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -148,3 +149,13 @@ main {
     margin-top: 5px;
     color: red;
 }
+
+.span-required{
+    display: none;
+    color: white;
+}
+
+
+
+
+
