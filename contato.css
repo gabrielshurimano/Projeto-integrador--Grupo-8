@@ -81,3 +81,8 @@ form p {
   z-index: 1;
   display: none;
 }
+
+.span-required{
+  display: none;
+  color: white;
+}

@@ -53,7 +53,7 @@
                 <a href="contato.html" class="contato">Contato</a></li>
 
             <li>
-                <a href="contato.html" class="agendaonline">
+                <a href="tela_cadastro.html" class="agendaonline">
                     AGENDAMENTO ONLINE
                 </a>
             </li>
@@ -65,17 +65,21 @@
     <main>
         <form id="formulario">
         <label for="nome"> Nome e Sobrenome</label>
-        <input type="text" id="nome" class="input-padrao" placeholder="Seu nome" >
+        <input type="text" placeholder="Digte seu nome completo" class="input-padrao required" oninput="nameValidate()">
+        <span class="span-required"> Campo deve ter no mínimo 10 caracteres</span>
         
         <label for="email"> Email </label>
-        <input type="text" id="email" class="input-padrao" placeholder="Seu email">
+        <input type="text" class="input-padrao required" placeholder="Digite seu melhor email" oninput="emailValidate()">
+        <span class="span-required"> Digite um email válido </span>
         
         <label for="telefone"> Telefone </label>
-        <input type="text" id="telefone" class="input-padrao" placeholder="Se possivel whatsapp">
+        <input type="text" placeholder="Digite seu número com DDD" class="input-padrao required" oninput="telValidate()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        <span class="span-required"> Telefone deve ter 11 dígitos </span>
         
         
         <label for="mensagem">Mensagem</label>
-        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+        <textarea cols="70" rows="10" id="mensagem" class= "input-padrao required"  oninput="mensagemValidate()" ></textarea>
+        <span class="span-required"> Campo deve ter no mínimo 20 caracteres </span>
         
             <div>	
             <p> Como Prefere nosso contato? </p>
