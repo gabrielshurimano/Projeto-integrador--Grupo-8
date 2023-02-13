@@ -69,8 +69,10 @@ h1{
 .servicos_mais_procurados{
   margin-top: 75px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .servicos_mais_procurados h2{

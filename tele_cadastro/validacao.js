@@ -1,7 +1,5 @@
 const form = document.getElementById("form");
 
-console.log(form);
-
 let nome_usuario;
 let email_usuario;
 let whatsapp;
@@ -26,9 +24,9 @@ function checkInputs() {
   const passwordValue = password.value.trim();
   const conf_passwordValue = conf_password.value.trim();
 
-  if (nome_usuarioValue === "") {
+  if (!validateName(nome_usuarioValue)) {
     //mostrar o erro e adicionando a classe erro
-    erroValidador(nome_usuario, "Preencha esse campo");
+    erroValidador(nome_usuario, "Preencha esse campo com nome e sobrenome");
   } else {
     //adicionar a classe de sucesso
   }
@@ -40,9 +38,9 @@ function checkInputs() {
     //adicionar a classe de sucesso
   }
 
-  if (whatsappValue === "") {
+  if (!validatePhoneNumber(whatsappValue)) {
     //mostrar o erro e adicionando a classe erro
-    erroValidador(whatsapp, "Preencha esse campo");
+    erroValidador(whatsapp, "Preencha esse campo corretamente");
   } else {
     //adicionar a classe de sucesso
   }
@@ -66,4 +64,32 @@ function validateEmail(email) {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
+}
+
+function validateName(name) {
+  if (!name) {
+    return false;
+  }
+
+  if (!/^[a-zA-Z\s]+$/.test(name)) {
+    return false;
+  }
+
+  let words = name.split(" ");
+  if (words.length < 2) {
+    return false;
+  }
+
+  return true;
+}
+
+function validatePhoneNumber(number) {
+  if (!number) {
+    return false;
+  }
+  number = number.replace(/\s+/g, "").replace(/[^\d]/g, "");
+  if (number.length !== 11) {
+    return false;
+  }
+  return true;
 }
