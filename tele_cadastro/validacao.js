@@ -39,6 +39,22 @@ function emailValidate(){
     }
 }
 
+/* Validar Campo Telefones */
+
+let telefoneValidado = false
+
+function telValidate(){
+    if (campos[2].value.length < 11 || campos[2].value.length > 11) {
+        SetError(2);
+        telefoneValidado = false
+    } else {
+        removeError(2)
+        telefoneValidado = true
+        
+    }
+}
+
+
 let senhaValidada = false
 
 function mainPasswordValidate(){
@@ -67,13 +83,14 @@ function ComparePassword(){
 }
 
 form.addEventListener("submit", (event) => {
-    if (nomeValidado && emailValidado && senhaValidada && senhaIgual) { 
+    if (nomeValidado && emailValidado && telefoneValidado && senhaValidada && senhaIgual) { 
      alert("Formulário enviado com sucesso")
     } else{
     event.preventDefault()
     alert("Preencha todos os campos corretamente")
     nameValidate()
     emailValidate()
+    telValidate()
     mainPasswordValidate()
     ComparePassword()
     }

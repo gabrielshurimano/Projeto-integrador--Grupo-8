@@ -81,8 +81,8 @@
         <!-- solicitandoo número do usuário -->
         <div class="controle_de_formulario">
           <label for="whatsapp">whatsapp</label>
-          <input type="number" placeholder="Digite seu número com DDD" class="inputs required">
-          <span class="span-required"> Digite somente números </span>
+          <input type="text" placeholder="Digite seu número com DDD" class="inputs required" oninput="telValidate()" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+          <span class="span-required"> Telefone deve ter 11 dígitos </span>
         </div>
 
       <!-- solicitando a senha do usuário -->
