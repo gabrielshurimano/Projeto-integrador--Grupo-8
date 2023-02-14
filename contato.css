@@ -24,18 +24,17 @@ main {
 }
 
 form {
-  margin: 40px 0;
+  
+  margin-bottom: 50px;
   background: rgba(2, 5, 15, 0.4);
-  /* border-radius: 5px; */
-  border: 2px solid #3E445B;
-  padding-left: 350px;
-  padding-right: 20px;
-  padding-top:20px ;
-  padding-bottom:20px ;
-  width: 80vh;
-  /* max-width: 100%; */
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  color: #BFBDC1;
+  border-radius: 5px;
+  border: 2px solid rgb(62, 68, 91);
+  padding-left: 43px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  color: rgb(191, 189, 193);
+  width: 450px;
+  height: 850px;
+  
 }
 
 form label,
@@ -49,7 +48,7 @@ form p {
   display: block;
   margin: 0 0 20px;
   padding: 10px 2px;
-  width: 50%;
+  width: 84%;
   /* Arredondar borda */
   border-radius: 5px;
 }
