@@ -1,7 +1,7 @@
 
 
 main {
-    background-image: url(../imagens/fundo_cadastro.jpg);
+    background-image: url(/imagens/fundo_cadastro.jpeg);
     background-size: cover;
     display: flex;
     font-family: 'Kdam Thmor Pro', sans-serif;
