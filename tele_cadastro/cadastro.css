@@ -1,6 +1,7 @@
-
+  
 
 main {
+ 
     background-image: url(/imagens/fundo_cadastro.jpeg);
     background-size: cover;
     display: flex;
@@ -9,8 +10,7 @@ main {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-
-    border: 0;
+    border: 0; 
 }
 
 .container {
