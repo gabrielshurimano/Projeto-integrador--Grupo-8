@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-}
+
 /* -------------------------------- */
 
 body {
@@ -17,44 +12,69 @@ body {
   font-size: 13px;
 }
 main {
-  width: 940px;
+ /* width: 940px;
   margin: 0 auto;
   padding-right: 70px;
-  margin-left: 450px;
+  margin-left: 450px;*/
+  display: flex;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 0; 
+
 }
 
-form {
+/*form {
+     margin-bottom: 50px; 
+     background: rgba(2, 5, 15, 0.4);
+     border-radius: 500px;
+     border: 2px solid rgb(62, 68, 91);
+     padding-left: 43px;
+     font-family: "Kdam Thmor Pro", sans-serif;
+     color: rgb(191, 189, 193);
+     width: 472px;
+     height: 850px; 
   
-  margin-bottom: 50px;
-  background: rgba(2, 5, 15, 0.4);
-  border-radius: 5px;
-  border: 2px solid rgb(62, 68, 91);
-  padding-left: 43px;
-  font-family: "Kdam Thmor Pro", sans-serif;
-  color: rgb(191, 189, 193);
-  width: 450px;
-  height: 850px;
-  
-}
+}*/
 
-form label,
+/*form label,
 form p {
-  display: block;
+  
   font-size: 20px;
   margin: 0 0 10px;
+  display: block;
+  } */
+
+  .formulario {
+
+    padding: 0 40px 30px;
+  }
+
+.container {
+  background: rgba(2, 5, 15, 0.4);
+  border-radius: 5px;
+  border: 2px solid #3E445B;
+  width: 450px;
+  max-width: 100%;
+  padding-right: 30px;
 }
 
-.input-padrao {
+/*.input-padrao {
   display: block;
   margin: 0 0 20px;
   padding: 10px 2px;
   width: 84%;
-  /* Arredondar borda */
+  Arredondar borda 
   border-radius: 5px;
-}
+}*/
 
-.checkbox {
+label.checkbox {
   margin: 20px 0;
+  display: block;
+  color: #BFBDC1;
+  font-size: 16px;
 }
 
 .butao {
@@ -84,4 +104,56 @@ form p {
 .span-required{
   display: none;
   color: white;
+}
+
+.controle_de_formulario {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.controle_de_formulario input {
+  border: 2px solid #3E445B;
+  border-radius: 5px;
+  outline: 0;
+
+  display: block;
+
+  font-size: 14px;
+
+  width: 90%;
+  padding: 15px;
+}
+
+.controle_de_formulario label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #BFBDC1;
+  transition-delay: as specified;
+
+}
+
+.controle_de_formulario p {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #BFBDC1;
+  transition-delay: as specified;
+  font-size: 16px;
+}
+
+.controle_de_formulario textarea {
+  display: block;
+  margin-bottom: 5px;
+  transition-delay: as specified;
+  width: 100%;
+
+
+}
+
+label.radio-button{
+  display: block;
+  margin-bottom: 5px;
+  color: #BFBDC1;
+  font-size: 16px;
+  transition-delay: as specified;
 }
